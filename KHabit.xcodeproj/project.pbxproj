@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE01722824B789B60065D4A4 /* LazyForEach.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01722724B789B60065D4A4 /* LazyForEach.swift */; };
+		BE05F2692520A7F900525B9E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE05F2682520A7F900525B9E /* CloudKit.framework */; };
+		BE0A4939252093DE00953837 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0A4938252093DE00953837 /* CloudKit.framework */; };
+		BE0A493A2520985000953837 /* KHabit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEAECC7124993D8800ACCEB9 /* KHabit.xcdatamodeld */; };
+		BE0A493B2520985200953837 /* KHabit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEAECC7124993D8800ACCEB9 /* KHabit.xcdatamodeld */; };
+		BE14003024A14F9100DE377E /* EditTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14002F24A14F9100DE377E /* EditTask.swift */; };
+		BE5FEB352526340C007B50AF /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5FEB342526340C007B50AF /* CustomTextField.swift */; };
+		BEAECC6E24993D8800ACCEB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAECC6D24993D8800ACCEB9 /* AppDelegate.swift */; };
+		BEAECC7024993D8800ACCEB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAECC6F24993D8800ACCEB9 /* SceneDelegate.swift */; };
+		BEAECC7524993D8800ACCEB9 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAECC7424993D8800ACCEB9 /* TaskListView.swift */; };
+		BEAECC7724993D8B00ACCEB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEAECC7624993D8B00ACCEB9 /* Assets.xcassets */; };
+		BEAECC7A24993D8B00ACCEB9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEAECC7924993D8B00ACCEB9 /* Preview Assets.xcassets */; };
+		BEAECC7D24993D8B00ACCEB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEAECC7B24993D8B00ACCEB9 /* LaunchScreen.storyboard */; };
+		BEB55129251D35F100F4F27A /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB55128251D35F100F4F27A /* StatsView.swift */; };
+		BEBEBAAB2518DA3E002DBD8C /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBEBAAA2518DA3E002DBD8C /* About.swift */; };
+		BED35325249953EE00583AF3 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED35324249953EE00583AF3 /* TaskManager.swift */; };
+		BED95F85251FB26B00F8CF2F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED95F83251FB26B00F8CF2F /* Interface.storyboard */; };
+		BED95F87251FB26D00F8CF2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED95F86251FB26D00F8CF2F /* Assets.xcassets */; };
+		BED95F8E251FB26D00F8CF2F /* KHabit Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BED95F8D251FB26D00F8CF2F /* KHabit Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BED95F93251FB26D00F8CF2F /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED95F92251FB26D00F8CF2F /* HostingController.swift */; };
+		BED95F95251FB26D00F8CF2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED95F94251FB26D00F8CF2F /* ContentView.swift */; };
+		BED95F97251FB26D00F8CF2F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED95F96251FB26D00F8CF2F /* ExtensionDelegate.swift */; };
+		BED95F99251FB26D00F8CF2F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED95F98251FB26D00F8CF2F /* ComplicationController.swift */; };
+		BED95F9B251FB26E00F8CF2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED95F9A251FB26E00F8CF2F /* Assets.xcassets */; };
+		BED95F9E251FB26E00F8CF2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED95F9D251FB26E00F8CF2F /* Preview Assets.xcassets */; };
+		BED95FA2251FB26E00F8CF2F /* KHabit Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BED95F81251FB26B00F8CF2F /* KHabit Watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BED95FAD251FB50700F8CF2F /* CoreDataObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED95FAC251FB50700F8CF2F /* CoreDataObjects.swift */; };
+		BED95FAE251FB50700F8CF2F /* CoreDataObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED95FAC251FB50700F8CF2F /* CoreDataObjects.swift */; };
+		BED9D31A249C9A1C00620CA9 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED9D319249C9A1C00620CA9 /* Style.swift */; };
+		BEE19A7E249D1FBF00052DEA /* NewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE19A7D249D1FBF00052DEA /* NewTask.swift */; };
+		BEFFA6C124A7873300694DE0 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFFA6C024A7873300694DE0 /* HistoryView.swift */; };
+		BEFFA6C324AA454C00694DE0 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFFA6C224AA454C00694DE0 /* CalendarView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BED95F8F251FB26D00F8CF2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEAECC6224993D8800ACCEB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BED95F8C251FB26D00F8CF2F;
+			remoteInfo = "KHabit Watch Extension";
+		};
+		BED95FA0251FB26E00F8CF2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEAECC6224993D8800ACCEB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BED95F80251FB26B00F8CF2F;
+			remoteInfo = "KHabit Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BED95FA3251FB26E00F8CF2F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BED95FA2251FB26E00F8CF2F /* KHabit Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED95FA6251FB26E00F8CF2F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BED95F8E251FB26D00F8CF2F /* KHabit Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BE01722724B789B60065D4A4 /* LazyForEach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyForEach.swift; sourceTree = "<group>"; };
+		BE05F2672520A7F500525B9E /* KHabit Watch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "KHabit Watch Extension.entitlements"; sourceTree = "<group>"; };
+		BE05F2682520A7F900525B9E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		BE0A4938252093DE00953837 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		BE14002F24A14F9100DE377E /* EditTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTask.swift; sourceTree = "<group>"; };
+		BE5FEB342526340C007B50AF /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		BE676A6E251FEBA200E0B062 /* KHabit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KHabit.entitlements; sourceTree = "<group>"; };
+		BEAECC6A24993D8800ACCEB9 /* KHabit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KHabit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEAECC6D24993D8800ACCEB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BEAECC6F24993D8800ACCEB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BEAECC7224993D8800ACCEB9 /* KHabit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KHabit.xcdatamodel; sourceTree = "<group>"; };
+		BEAECC7424993D8800ACCEB9 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		BEAECC7624993D8B00ACCEB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEAECC7924993D8B00ACCEB9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BEAECC7C24993D8B00ACCEB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BEAECC7E24993D8B00ACCEB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEB55128251D35F100F4F27A /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		BEBEBAAA2518DA3E002DBD8C /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		BED35324249953EE00583AF3 /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		BED95F81251FB26B00F8CF2F /* KHabit Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KHabit Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BED95F84251FB26B00F8CF2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		BED95F86251FB26D00F8CF2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BED95F88251FB26D00F8CF2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BED95F8D251FB26D00F8CF2F /* KHabit Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "KHabit Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BED95F92251FB26D00F8CF2F /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		BED95F94251FB26D00F8CF2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BED95F96251FB26D00F8CF2F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		BED95F98251FB26D00F8CF2F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		BED95F9A251FB26E00F8CF2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BED95F9D251FB26E00F8CF2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BED95F9F251FB26E00F8CF2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BED95FAC251FB50700F8CF2F /* CoreDataObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataObjects.swift; sourceTree = "<group>"; };
+		BED9D319249C9A1C00620CA9 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		BEE19A7D249D1FBF00052DEA /* NewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTask.swift; sourceTree = "<group>"; };
+		BEFFA6C024A7873300694DE0 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		BEFFA6C224AA454C00694DE0 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEAECC6724993D8800ACCEB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE0A4939252093DE00953837 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED95F8A251FB26D00F8CF2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE05F2692520A7F900525B9E /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE041990251FE439007F43B0 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				BEE19A7D249D1FBF00052DEA /* NewTask.swift */,
+				BE14002F24A14F9100DE377E /* EditTask.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		BE0A4937252093DE00953837 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE05F2682520A7F900525B9E /* CloudKit.framework */,
+				BE0A4938252093DE00953837 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEA2DC49249DFE8A005BB38C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BED35324249953EE00583AF3 /* TaskManager.swift */,
+				BED95FAC251FB50700F8CF2F /* CoreDataObjects.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BEAECC6124993D8800ACCEB9 = {
+			isa = PBXGroup;
+			children = (
+				BEAECC6C24993D8800ACCEB9 /* KHabit */,
+				BED95F82251FB26B00F8CF2F /* KHabit Watch */,
+				BED95F91251FB26D00F8CF2F /* KHabit Watch Extension */,
+				BEAECC6B24993D8800ACCEB9 /* Products */,
+				BE0A4937252093DE00953837 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BEAECC6B24993D8800ACCEB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEAECC6A24993D8800ACCEB9 /* KHabit.app */,
+				BED95F81251FB26B00F8CF2F /* KHabit Watch.app */,
+				BED95F8D251FB26D00F8CF2F /* KHabit Watch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEAECC6C24993D8800ACCEB9 /* KHabit */ = {
+			isa = PBXGroup;
+			children = (
+				BE676A6E251FEBA200E0B062 /* KHabit.entitlements */,
+				BEA2DC49249DFE8A005BB38C /* Core */,
+				BEDD10CC249D448B00F442A1 /* Screens */,
+				BED9D318249C99E200620CA9 /* UI */,
+				BEAECC6D24993D8800ACCEB9 /* AppDelegate.swift */,
+				BEAECC6F24993D8800ACCEB9 /* SceneDelegate.swift */,
+				BEAECC7624993D8B00ACCEB9 /* Assets.xcassets */,
+				BEAECC7B24993D8B00ACCEB9 /* LaunchScreen.storyboard */,
+				BEAECC7E24993D8B00ACCEB9 /* Info.plist */,
+				BEAECC7124993D8800ACCEB9 /* KHabit.xcdatamodeld */,
+				BEAECC7824993D8B00ACCEB9 /* Preview Content */,
+			);
+			path = KHabit;
+			sourceTree = "<group>";
+		};
+		BEAECC7824993D8B00ACCEB9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BEAECC7924993D8B00ACCEB9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BED95F82251FB26B00F8CF2F /* KHabit Watch */ = {
+			isa = PBXGroup;
+			children = (
+				BED95F83251FB26B00F8CF2F /* Interface.storyboard */,
+				BED95F86251FB26D00F8CF2F /* Assets.xcassets */,
+				BED95F88251FB26D00F8CF2F /* Info.plist */,
+			);
+			path = "KHabit Watch";
+			sourceTree = "<group>";
+		};
+		BED95F91251FB26D00F8CF2F /* KHabit Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BE05F2672520A7F500525B9E /* KHabit Watch Extension.entitlements */,
+				BED95F92251FB26D00F8CF2F /* HostingController.swift */,
+				BED95F94251FB26D00F8CF2F /* ContentView.swift */,
+				BED95F96251FB26D00F8CF2F /* ExtensionDelegate.swift */,
+				BED95F98251FB26D00F8CF2F /* ComplicationController.swift */,
+				BED95F9A251FB26E00F8CF2F /* Assets.xcassets */,
+				BED95F9F251FB26E00F8CF2F /* Info.plist */,
+				BED95F9C251FB26E00F8CF2F /* Preview Content */,
+			);
+			path = "KHabit Watch Extension";
+			sourceTree = "<group>";
+		};
+		BED95F9C251FB26E00F8CF2F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BED95F9D251FB26E00F8CF2F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BED9D318249C99E200620CA9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BE01722724B789B60065D4A4 /* LazyForEach.swift */,
+				BED9D319249C9A1C00620CA9 /* Style.swift */,
+				BEFFA6C224AA454C00694DE0 /* CalendarView.swift */,
+				BE5FEB342526340C007B50AF /* CustomTextField.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BEDD10CC249D448B00F442A1 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BEAECC7424993D8800ACCEB9 /* TaskListView.swift */,
+				BEFFA6C024A7873300694DE0 /* HistoryView.swift */,
+				BEB55128251D35F100F4F27A /* StatsView.swift */,
+				BEBEBAAA2518DA3E002DBD8C /* About.swift */,
+				BE041990251FE439007F43B0 /* SubViews */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEAECC6924993D8800ACCEB9 /* KHabit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEAECC8124993D8B00ACCEB9 /* Build configuration list for PBXNativeTarget "KHabit" */;
+			buildPhases = (
+				BEAECC6624993D8800ACCEB9 /* Sources */,
+				BEAECC6724993D8800ACCEB9 /* Frameworks */,
+				BEAECC6824993D8800ACCEB9 /* Resources */,
+				BED95FA3251FB26E00F8CF2F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BED95FA1251FB26E00F8CF2F /* PBXTargetDependency */,
+			);
+			name = KHabit;
+			productName = KHabit;
+			productReference = BEAECC6A24993D8800ACCEB9 /* KHabit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BED95F80251FB26B00F8CF2F /* KHabit Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BED95FAA251FB26E00F8CF2F /* Build configuration list for PBXNativeTarget "KHabit Watch" */;
+			buildPhases = (
+				BED95F7F251FB26B00F8CF2F /* Resources */,
+				BED95FA6251FB26E00F8CF2F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BED95F90251FB26D00F8CF2F /* PBXTargetDependency */,
+			);
+			name = "KHabit Watch";
+			productName = "KHabit Watch";
+			productReference = BED95F81251FB26B00F8CF2F /* KHabit Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		BED95F8C251FB26D00F8CF2F /* KHabit Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BED95FA9251FB26E00F8CF2F /* Build configuration list for PBXNativeTarget "KHabit Watch Extension" */;
+			buildPhases = (
+				BED95F89251FB26D00F8CF2F /* Sources */,
+				BED95F8A251FB26D00F8CF2F /* Frameworks */,
+				BED95F8B251FB26D00F8CF2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KHabit Watch Extension";
+			productName = "KHabit Watch Extension";
+			productReference = BED95F8D251FB26D00F8CF2F /* KHabit Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEAECC6224993D8800ACCEB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = elkiwy;
+				TargetAttributes = {
+					BEAECC6924993D8800ACCEB9 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					BED95F80251FB26B00F8CF2F = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					BED95F8C251FB26D00F8CF2F = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = BEAECC6524993D8800ACCEB9 /* Build configuration list for PBXProject "KHabit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEAECC6124993D8800ACCEB9;
+			productRefGroup = BEAECC6B24993D8800ACCEB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEAECC6924993D8800ACCEB9 /* KHabit */,
+				BED95F80251FB26B00F8CF2F /* KHabit Watch */,
+				BED95F8C251FB26D00F8CF2F /* KHabit Watch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEAECC6824993D8800ACCEB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEAECC7D24993D8B00ACCEB9 /* LaunchScreen.storyboard in Resources */,
+				BEAECC7A24993D8B00ACCEB9 /* Preview Assets.xcassets in Resources */,
+				BEAECC7724993D8B00ACCEB9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED95F7F251FB26B00F8CF2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BED95F87251FB26D00F8CF2F /* Assets.xcassets in Resources */,
+				BED95F85251FB26B00F8CF2F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED95F8B251FB26D00F8CF2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BED95F9E251FB26E00F8CF2F /* Preview Assets.xcassets in Resources */,
+				BED95F9B251FB26E00F8CF2F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEAECC6624993D8800ACCEB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEAECC6E24993D8800ACCEB9 /* AppDelegate.swift in Sources */,
+				BEBEBAAB2518DA3E002DBD8C /* About.swift in Sources */,
+				BED9D31A249C9A1C00620CA9 /* Style.swift in Sources */,
+				BE14003024A14F9100DE377E /* EditTask.swift in Sources */,
+				BEE19A7E249D1FBF00052DEA /* NewTask.swift in Sources */,
+				BED35325249953EE00583AF3 /* TaskManager.swift in Sources */,
+				BE0A493A2520985000953837 /* KHabit.xcdatamodeld in Sources */,
+				BEAECC7524993D8800ACCEB9 /* TaskListView.swift in Sources */,
+				BE01722824B789B60065D4A4 /* LazyForEach.swift in Sources */,
+				BEB55129251D35F100F4F27A /* StatsView.swift in Sources */,
+				BEAECC7024993D8800ACCEB9 /* SceneDelegate.swift in Sources */,
+				BED95FAD251FB50700F8CF2F /* CoreDataObjects.swift in Sources */,
+				BEFFA6C124A7873300694DE0 /* HistoryView.swift in Sources */,
+				BEFFA6C324AA454C00694DE0 /* CalendarView.swift in Sources */,
+				BE5FEB352526340C007B50AF /* CustomTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED95F89251FB26D00F8CF2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BED95F95251FB26D00F8CF2F /* ContentView.swift in Sources */,
+				BED95F99251FB26D00F8CF2F /* ComplicationController.swift in Sources */,
+				BE0A493B2520985200953837 /* KHabit.xcdatamodeld in Sources */,
+				BED95F93251FB26D00F8CF2F /* HostingController.swift in Sources */,
+				BED95F97251FB26D00F8CF2F /* ExtensionDelegate.swift in Sources */,
+				BED95FAE251FB50700F8CF2F /* CoreDataObjects.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BED95F90251FB26D00F8CF2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BED95F8C251FB26D00F8CF2F /* KHabit Watch Extension */;
+			targetProxy = BED95F8F251FB26D00F8CF2F /* PBXContainerItemProxy */;
+		};
+		BED95FA1251FB26E00F8CF2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BED95F80251FB26B00F8CF2F /* KHabit Watch */;
+			targetProxy = BED95FA0251FB26E00F8CF2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEAECC7B24993D8B00ACCEB9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEAECC7C24993D8B00ACCEB9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BED95F83251FB26B00F8CF2F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BED95F84251FB26B00F8CF2F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEAECC7F24993D8B00ACCEB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BEAECC8024993D8B00ACCEB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEAECC8224993D8B00ACCEB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KHabit/KHabit.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"KHabit/Preview Content\"";
+				DEVELOPMENT_TEAM = HMH2WDDN7V;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = KHabit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elkiwy.KHabit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEAECC8324993D8B00ACCEB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KHabit/KHabit.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"KHabit/Preview Content\"";
+				DEVELOPMENT_TEAM = HMH2WDDN7V;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = KHabit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elkiwy.KHabit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BED95FA4251FB26E00F8CF2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HMH2WDDN7V;
+				IBSC_MODULE = KHabit_Watch_Extension;
+				INFOPLIST_FILE = "KHabit Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elkiwy.KHabit.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		BED95FA5251FB26E00F8CF2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HMH2WDDN7V;
+				IBSC_MODULE = KHabit_Watch_Extension;
+				INFOPLIST_FILE = "KHabit Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elkiwy.KHabit.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		BED95FA7251FB26E00F8CF2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "KHabit Watch Extension/KHabit Watch Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"KHabit Watch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = HMH2WDDN7V;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "KHabit Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elkiwy.KHabit.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		BED95FA8251FB26E00F8CF2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "KHabit Watch Extension/KHabit Watch Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"KHabit Watch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = HMH2WDDN7V;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "KHabit Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elkiwy.KHabit.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEAECC6524993D8800ACCEB9 /* Build configuration list for PBXProject "KHabit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEAECC7F24993D8B00ACCEB9 /* Debug */,
+				BEAECC8024993D8B00ACCEB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEAECC8124993D8B00ACCEB9 /* Build configuration list for PBXNativeTarget "KHabit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEAECC8224993D8B00ACCEB9 /* Debug */,
+				BEAECC8324993D8B00ACCEB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BED95FA9251FB26E00F8CF2F /* Build configuration list for PBXNativeTarget "KHabit Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BED95FA7251FB26E00F8CF2F /* Debug */,
+				BED95FA8251FB26E00F8CF2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BED95FAA251FB26E00F8CF2F /* Build configuration list for PBXNativeTarget "KHabit Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BED95FA4251FB26E00F8CF2F /* Debug */,
+				BED95FA5251FB26E00F8CF2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BEAECC7124993D8800ACCEB9 /* KHabit.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BEAECC7224993D8800ACCEB9 /* KHabit.xcdatamodel */,
+			);
+			currentVersion = BEAECC7224993D8800ACCEB9 /* KHabit.xcdatamodel */;
+			path = KHabit.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BEAECC6224993D8800ACCEB9 /* Project object */;
+}
