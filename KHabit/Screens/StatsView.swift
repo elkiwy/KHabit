@@ -77,7 +77,7 @@ struct graph_30days: View{
     
     var body: some View{
         //Get the max completions value
-        let m:CGFloat = CGFloat(data.reduce(0) { (curr, i) -> Int in return max(curr, i.completions.count) })
+        let m:CGFloat = max(CGFloat(data.reduce(0) { (curr, i) -> Int in return max(curr, i.completions.count) }), 1)
 
         //Actual body
         return HStack{
