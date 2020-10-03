@@ -594,6 +594,7 @@
 				CODE_SIGN_ENTITLEMENTS = KHabit/KHabit.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"KHabit/Preview Content\"";
 				DEVELOPMENT_TEAM = HMH2WDDN7V;
 				ENABLE_PREVIEWS = YES;
@@ -607,7 +608,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -618,6 +619,7 @@
 				CODE_SIGN_ENTITLEMENTS = KHabit/KHabit.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"KHabit/Preview Content\"";
 				DEVELOPMENT_TEAM = HMH2WDDN7V;
 				ENABLE_PREVIEWS = YES;
@@ -631,7 +633,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
