@@ -121,23 +121,30 @@ struct TaskListView: View {
             //View container
             NavigationView{
                 //Task List
-                List{
-                    ForEach(manager.tasks, id: \.self) { task in
-                        //Task cell for edit mode
-                        if self.editMode{
-                            NavigationLink(destination: NavigationLazyView(EditTask(task: task))){
+                VStack{
+                if (manager.tasks.count>0){
+                    List{
+                        ForEach(manager.tasks, id: \.self) { task in
+                            //Task cell for edit mode
+                            if self.editMode{
+                                NavigationLink(destination: NavigationLazyView(EditTask(task: task))){
+                                    TaskCell(task: task, editMode:self.$editMode)
+                                }
+                                //Task cell for normal mode
+                            }else{
                                 TaskCell(task: task, editMode:self.$editMode)
                             }
-                        //Task cell for normal mode
-                        }else{
-                            TaskCell(task: task, editMode:self.$editMode)
                         }
+                        .onDelete(perform: { indexSet in
+                            TaskManager.shared.deleteTask(task: TaskManager.shared.tasks[indexSet.first!])
+                        })
                     }
-                    .onDelete(perform: { indexSet in
-                        TaskManager.shared.deleteTask(task: TaskManager.shared.tasks[indexSet.first!])
-                    })
+                    .listStyle(PlainListStyle())
+                }else{
+                    Text("Create you first Task by tapping the \"+\" icon on the top right of the screen.")
+                        .padding(32)
                 }
-                .listStyle(PlainListStyle())
+                }
                 
                 //View Title
                 .navigationBarTitle("Tasks")
