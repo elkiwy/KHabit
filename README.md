@@ -11,6 +11,10 @@ The app is completely open source, it does not contain in-app or ads, and does n
 - Complete tasks directly from your Apple Watch
 - Synchronise your data on iCloud
 
+# App Store version
+If you can't build it yourself and/or you want to support me, you can buy it from the AppStore for a coffee: 
+https://apps.apple.com/tt/app/khabit/id1533656718
+
 # Goal
 This is the first of a series of apps I want to make in order to have a set of pure apps for specific tasks. 
 
